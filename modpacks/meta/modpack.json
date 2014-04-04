@@ -1,0 +1,45 @@
+{
+  "name": "mymodpack",
+  "title": "My Modpack",
+  "gameVersion": "%CBMinecraftVersion%",
+  "launch": {
+    "flags": []
+  },
+  "userFiles": {
+    "include": [
+      "options.txt",
+      "servers.dat",
+      "config/SomeClientReconfigurableMod.cfg",
+    ]
+  },
+  "features": [
+    {
+      "properties": {
+        "name": "SomeAwesomeMod",
+        "description": "Adds some awesome features",
+        "recommendation": "starred",
+        "selected": true
+      },
+      "files": {
+        "include": [
+          "mods/SomeAwesomeMod v1.0.0.jar",
+          "config/SomeAwesomeMod.cfg"
+        ]
+      }
+    },
+    {
+      "properties": {
+        "name": "SomeTerribleMod",
+        "description": "Adds some terrible features",
+        "recommendation": "avoid",
+        "selected": false
+      },
+      "files": {
+        "include": [
+          "mods/SomeTerribleMod v1.0.0.zip",
+          "config/SomeTerribleMod.cfg"
+        ]
+      }
+    }
+  ]
+}
